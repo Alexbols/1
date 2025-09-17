@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: PaleGreen;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zoomir.HelloController">
+   <children>
+      <AnchorPane prefHeight="72.0" prefWidth="600.0" style="-fx-background-color: Green;">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="222.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="176.0" layoutY="81.0" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: ForestGreen; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="27.0" layoutY="8.0" prefHeight="27.0" prefWidth="182.0" text="АВТОРИЗАЦИЯ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <TextField fx:id="login" layoutX="206.0" layoutY="150.0" promptText="логин" style="-fx-background-radius: 10;" />
+      <TextField fx:id="parol" layoutX="206.0" layoutY="188.0" promptText="пароль" style="-fx-background-radius: 10;" />
+      <Button fx:id="vxod" layoutX="248.0" layoutY="236.0" mnemonicParsing="false" onAction="#vxod" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: White; -fx-background-radius: 16;" text="Войти" />
+      <Button fx:id="registr" layoutX="248.0" layoutY="278.0" mnemonicParsing="false" onAction="#registr" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: White; -fx-background-radius: 16;" text="Регистрация" />
+      <Button fx:id="vixod" layoutX="496.0" layoutY="356.0" mnemonicParsing="false" onAction="#vixod" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: White; -fx-background-radius: 16;" text="Выход" />
+      <Button fx:id="razrab" layoutX="20.0" layoutY="356.0" mnemonicParsing="false" onAction="#razrab" style="-fx-background-color: White; -fx-background-radius: 16;" text="О разработчике" />
+      <Button fx:id="prog" layoutX="150.0" layoutY="356.0" mnemonicParsing="false" onAction="#prog" style="-fx-background-color: White; -fx-background-radius: 16;" text="О программе" />
+   </children>
+</AnchorPane>
