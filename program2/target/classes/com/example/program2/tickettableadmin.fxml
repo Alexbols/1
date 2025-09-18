@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="636.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.program2.TicketTableAdminController">
+   <children>
+      <Button layoutX="111.0" layoutY="552.0" mnemonicParsing="false" onAction="#Add" prefHeight="16.0" prefWidth="118.0" style="-fx-background-color: #76e383;" text="Добавить" />
+      <Button layoutX="408.0" layoutY="552.0" mnemonicParsing="false" onAction="#Edit" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #76e383;" text="Изменить" />
+      <Button layoutX="563.0" layoutY="552.0" mnemonicParsing="false" onAction="#Delete" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #76e383;" text="Удалить" />
+      <Button fx:id="BackID" layoutX="14.0" layoutY="597.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #76e383;" text="Назад" />
+      <TextField fx:id="EventID" layoutX="136.0" layoutY="467.0" prefHeight="25.0" prefWidth="118.0" promptText="ID_Мероприятия" style="-fx-background-color: #76e383;" />
+      <TextField fx:id="ParticipantID" layoutX="268.0" layoutY="467.0" prefHeight="25.0" prefWidth="118.0" promptText="ID_Учасника" style="-fx-background-color: #76e383;" />
+      <TextField fx:id="TicketTypeID" layoutX="400.0" layoutY="467.0" prefHeight="25.0" prefWidth="118.0" promptText="ID_ТипаБилета" style="-fx-background-color: #76e383;" />
+      <TextField fx:id="Price" layoutX="532.0" layoutY="467.0" prefHeight="25.0" prefWidth="118.0" promptText="Цена" style="-fx-background-color: #76e383;" />
+      <TextField fx:id="TicketID" layoutX="7.0" layoutY="467.0" prefHeight="25.0" prefWidth="118.0" promptText="ID_Билета" style="-fx-background-color: #76e383;" />
+      <TableView fx:id="TicketTable" layoutX="14.0" layoutY="110.0" onMouseClicked="#getSelected" prefHeight="341.0" prefWidth="766.0">
+         <columns>
+            <TableColumn fx:id="TicketIDColumn" prefWidth="81.0" text="ID_Билета" />
+            <TableColumn fx:id="EventIDColumn" prefWidth="118.0" text="ID_Мероприятия" />
+            <TableColumn fx:id="ParticipantIDColumn" prefWidth="103.0" text="ID_Учасника" />
+            <TableColumn fx:id="TicketTypeIDColumn" prefWidth="142.0" text="ID_ТипаБилета" />
+            <TableColumn fx:id="PriceColumn" prefWidth="143.0" text="Цена" />
+            <TableColumn fx:id="PurchaseDateColumn" prefWidth="178.0" text="ДатаПокупки" />
+         </columns>
+      </TableView>
+      <TextField fx:id="Search" layoutX="128.0" layoutY="75.0" prefHeight="26.0" prefWidth="535.0" promptText="Поиск" style="-fx-background-color: #76e383;" />
+      <Button layoutX="259.0" layoutY="552.0" mnemonicParsing="false" onAction="#Update" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #76e383;" text="Обновить" />
+      <AnchorPane prefHeight="65.0" prefWidth="791.0" style="-fx-background-color: #76e383;">
+         <children>
+            <Label layoutX="305.0" layoutY="18.0" text="Таблица &quot;Билеты&quot;">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="PurchaseDate" layoutX="666.0" layoutY="467.0" prefHeight="25.0" prefWidth="118.0" promptText="ДатаПокупки" style="-fx-background-color: #76e383;" />
+      <Button layoutX="707.0" layoutY="597.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #76e383;" text="Выход" />
+   </children>
+</AnchorPane>
