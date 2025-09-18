@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="155.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.program1.AboutAuthor">
+   <children>
+      <Label layoutX="78.0" layoutY="46.0" text="Выполнил: Пашков Артём.">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="78.0" text="Группа: ИСП-31.">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
